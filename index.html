@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعليم الفلسفة والمنطق - الصف الأول الثانوي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>تعليم الفلسفة والمنطق</h1>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="ابحث عن...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">عن الموقع</a></li>
+                    <li><a href="#lessons" class="nav-link">الدروس</a></li>
+                    <li><a href="#" class="nav-link" onclick="openContactDialog()">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="hero">
+            <h2>مرحبًا بك في عالم الفلسفة والمنطق</h2>
+            <p>اكتشف المفاهيم الأساسية بطريقة ممتعة وتفاعلية.</p>
+        </section>
+        <div id="welcome-animation">
+            <h1>مرحبًا بك في موقع الفيلسوف رشتاوي!</h1>
+        </div>        
+        <section id="lessons">
+            <h2>الدروس</h2>
+            <div class="lesson-grid">
+                <div class="lesson-card" data-lesson-name="مقدمة في الفلسفة">
+                    <img src="photo/مقدمة في الفلسفة.jpg" alt="مقدمة في الفلسفة">
+                    <h3>مقدمة في الفلسفة</h3>
+                    <p>استكشاف الأفكار الفلسفية الأساسية.</p>
+                    <a href="L/lesson1.html" class="read-more-btn">اقرأ المزيد</a>
+                </div>
+                <div class="lesson-card" data-lesson-name="مقدمة في الفلسفة">
+                    <img src="photo/مقدمة في الفلسفة.jpg" alt="مقدمة في الفلسفة">
+                    <h3>مقدمة في الفلسفة</h3>
+                    <p>استكشاف الأفكار الفلسفية الأساسية.</p>
+                    <a href="L/lesson1.html" class="read-more-btn">اقرأ المزيد</a>
+                </div>
+                <div class="lesson-card" data-lesson-name="فلاسفة مصريون وعرب">
+                    <h3>فلاسفة مصريون وعرب</h3>
+                    <p>تعرف على أهم الفلاسفة في التاريخ.</p>
+                    <a href="L/lesson1.html" class="read-more-btn">اقرأ المزيد</a>
+                </div>
+                <div class="lesson-card" data-lesson-name="المفاهيم الأساسية">
+                    <h3>المفاهيم الأساسية</h3>
+                    <p>استعرض المفاهيم الرئيسية في الفلسفة.</p>
+                    <a href="L/lesson1.html" class="read-more-btn">اقرأ المزيد</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- نافذة dialog لقسم تواصل معنا -->
+        <dialog id="contactDialog">
+            <h2>تواصل معنا</h2>
+            <form>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">رسالتك:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">إرسال</button>
+            </form>
+            <button onclick="closeContactDialog()" class="close-button">إغلاق</button>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy; 2024 موقع تعليم الفلسفة والمنطق - الصف الأول الثانوي. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
